@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        linkedin: "rgb(10, 102, 194)",
+        resume: "rgb(58, 58, 210)",
+        presentation: "rgb(83, 92, 145)"
       },
     },
   },

@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .componentStyle {
+    @apply border border-black rounded-3xl p-5 select-none
+  }
+
+  .hoverStyle {
+    @apply flex justify-center items-center h-full w-full transition duration-300 hover:scale-125 cursor-pointer
+  }
+
+  .link-icon {
+    @apply h-4 w-4 absolute right-3 top-2
+  }
+
+  .tech-icon-style {
+    @apply h-full w-full cursor-pointer transition duration-300 hover:scale-125
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
