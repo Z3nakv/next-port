@@ -9,7 +9,7 @@ export default function Introduction() {
             <video
                 src="/mechabg.mp4"
                 autoPlay loop muted
-                className="absolute inset-0 object-fit z-[-1] w-full h-full object-fill brightness-75"
+                className="absolute inset-0 object-fit z-[-1] w-full h-full object-fill brightness-50"
             />
 
 
