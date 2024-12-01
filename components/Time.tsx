@@ -1,5 +1,5 @@
 'use client';
-import { getTime } from "@/utils/fetchData"; // Asegúrate de que esta función esté definida y exportada correctamente.
+import { getTime } from "@/utils/fetchData";
 import { useState, useEffect } from "react";
 
 type TypeHour = {
@@ -34,7 +34,7 @@ export default function PageColorTheme() {
   }
 
   return (
-    <div className="col-span-2 flex justify-center items-center border border-black rounded-3xl font-bold select-none">
+    <div className="text-white text-2xl col-span-2 flex justify-center items-center md:p-5 rounded-3xl font-bold select-none shadow-boxShadow bg-[#0F4C75]">
       {transformTime(time)}
     </div>
   );

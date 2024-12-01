@@ -4,7 +4,7 @@
 
 @layer components {
   .componentStyle {
-    @apply border border-black rounded-3xl p-5 select-none
+    @apply rounded-3xl p-5 select-none
   }
 
   .hoverStyle {
@@ -16,7 +16,7 @@
   }
 
   .tech-icon-style {
-    @apply h-full w-full cursor-pointer transition duration-300 hover:scale-125
+    @apply h-full w-full cursor-pointer transition duration-300 hover:scale-125 p-2
   }
 }
 
@@ -30,6 +30,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {

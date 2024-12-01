@@ -3,34 +3,45 @@ import { CartIcon, ChatIcon, NextflixIcon } from "./Icons";
 
 export default function Projects() {
   return (
-    <div className="componentStyle col-span-8 grid grid-cols-3 gap-4 place-content-center place-items-center  ">
+    <div 
+    className="componentStyle p-10 col-span-8 grid grid-cols-3 gap-4 place-content-center place-items-center shadow-boxShadow bg-[#073B4C]
+    md:col-span-6 md:col-start-3 md:p-10">
         <div className="col-span-3 text-center font-bold text-3xl">
-            <h2>Projects</h2>
+            <h2 className="">Projects</h2>
         </div>
-        <Link
-        href={'https://next-flix-kappa.vercel.app/'} 
-        className="h-24 w-24 hoverStyle"
-        scroll={false}
-        target="blank"
-        >
-            <NextflixIcon className="h-full w-full" fill="#fff" />
-        </Link>
-        <Link 
-        href={'https://food-delivery-frontend-vq0w.onrender.com'}
-        className="h-24 w-24 hoverStyle"
-        scroll={false}
-        target="blank"
-        >
-            <CartIcon className="h-full w-full" fill="#000" textFill="#fff"/>
-        </Link>
-        <Link 
-        href={'https://chat-app-2edbe.web.app'}
-        className="h-24 w-24 hoverStyle"
-        scroll={false}
-        target="blank"
-        >
-            <ChatIcon className="h-full w-full" fill="#fff" textFill="#000" />
-        </Link>
+        <div className="flex flex-col justify-center items-center gap-5 font-bold">
+            <Link
+            href={'https://next-flix-kappa.vercel.app/'}
+            className="h-24 w-24 hoverStyle md:h-32 md:w-32"
+            scroll={false}
+            target="blank"
+            >
+                <NextflixIcon className="h-full w-full" fill="#fff" />
+            </Link>
+            <h3>NEXTFlix</h3>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-5 font-bold">
+            <Link
+            href={'https://food-delivery-frontend-vq0w.onrender.com'}
+            className="h-24 w-24 hoverStyle md:h-32 md:w-32"
+            scroll={false}
+            target="blank"
+            >
+                <CartIcon className="h-full w-full" fill="#fff" textFill="none"/>
+            </Link>
+            <h3>E-Commerce</h3>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-5 font-bold">
+            <Link
+            href={'https://chat-app-2edbe.web.app'}
+            className="h-24 w-24 hoverStyle md:h-32 md:w-32"
+            scroll={false}
+            target="blank"
+            >
+                <ChatIcon className="h-full w-full" fill="none" textFill="#fff" />
+            </Link>
+            <h3>Chat-app</h3>
+        </div>
     </div>
   )
 }

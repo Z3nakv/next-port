@@ -2,10 +2,14 @@ import {ResumeIcon, LinkIcon } from "./Icons";
 
 export default function Resume() {
   return (
-    <div className="relative bg-resume aspect-square col-span-2 row-start-6 border border-black rounded-3xl">
+    <div 
+    className="relative col-span-2 row-start-6 rounded-3xl overflow-hidden shadow-boxShadow bg-[#0F4C75]
+    md:row-span-2">
         <div className="hoverStyle">
-          <LinkIcon className="link-icon" fill="#000" />
-          <ResumeIcon className="h-10 w-10 col-start-2" fill="#000" />
+          <LinkIcon className="link-icon" fill="#fff" />
+          <div className="h-16 md:h-32">
+            <ResumeIcon className="h-full col-start-2" fill="#fff" />
+          </div>
         </div>
     </div>
   )
