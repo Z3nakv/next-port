@@ -26,13 +26,14 @@ export default {
       }
     },
     animation:{
-      flying: 'flying 2s infinite',
+      flying: 'flying 4s infinite',
     },
     keyframes: {
       flying: {
-        '0%': { transform: 'translateY(0%)' },
-        '50%': { transform: 'translateY(20%)' },
-        '100%': { transform: 'translateY(0%)' },
+        '0%': { transform: 'translateY(5%)' },
+          '50%': { transform: 'translateY(-10%)' },
+          '100%': { transform: 'translateY(5%)' },
+        
       },
     },
   },
