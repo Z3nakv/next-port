@@ -1,3 +1,4 @@
+import { TypeHour } from "@/types";
 
 export async function fetchData() {
     
@@ -25,7 +26,6 @@ export const requestWeather = async () => {
     
         const secondRequest = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`)
         const secondResponse = await secondRequest.json();
-        // console.log(secondResponse);
         
         return secondResponse;
     } catch (error) {
@@ -39,16 +39,14 @@ export function getTime () {
     const hour = date.getHours()
     const minutes = date.getMinutes()
     const seconds = date.getSeconds()
-    // console.log(seconds);
     
     return {hour, minutes, seconds}
 }
 
-export const transformTime = (time) => {
+export const transformTime = (time : TypeHour) => {
     const hour = time.hour.toString().padStart(2, "0");
     const minutes = time.minutes.toString().padStart(2, "0");
     const seconds = time.seconds.toString().padStart(2, "0");
-    // console.log(seconds);
     
     return `${hour}:${minutes}:${seconds}`;
   };
