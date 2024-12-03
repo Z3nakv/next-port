@@ -18,14 +18,11 @@ const inter = Inter({ subsets: ['latin'] })
 export default function page() {
   return (
     <div className={`grid grid-cols-8 m-auto gap-3 p-5 min-h-screen md:gap-7 max-w-[1000px] ${inter.className}`}>
-
       <Introduction />
-      {/* <div className="col-span-4 grid grid-cols-4 gap-2"> */}
-        <Linkedin />
-        <Time />
-        <PageColorTheme />
-        <Message />
-      {/* </div> */}
+      <Linkedin />
+      <Time />
+      <PageColorTheme />
+      <Message />
       <TechnoSkills />
       <Projects />
       <GeekNews />
