@@ -10,6 +10,7 @@ export default function Linkedin() {
             href={'https://www.linkedin.com/in/adrian-rivarola-43b388292'}
             target="_blank"
             className="hoverStyle"
+            aria-label="Ir al perfil de LinkedIn de Adrian Rivarola"
             >
                 <LinkIcon className="link-icon" fill="#fff" />
                 <LinkedinIcon className="h-16 w-full col-start-2 " fill='#fff' />

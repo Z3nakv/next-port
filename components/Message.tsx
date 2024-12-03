@@ -10,6 +10,7 @@ export default function Message() {
         href="mailto:ad.rivarola18@gmail.com"
         target="_blank"
         className="hoverStyle"
+        aria-label="Enviar un correo a Adrian Rivarola"
         >
           <LinkIcon className="link-icon" fill="#fff" />
           <MailIcon className="h-16 w-full" fill="#fff"/>

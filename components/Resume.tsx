@@ -8,7 +8,7 @@ export default function Resume() {
         <div className="hoverStyle">
           <LinkIcon className="link-icon" fill="#fff" />
           <div className="h-16 md:h-32">
-            <a href="/Adriancv.pdf" download={'adriancv.pdf'}>
+            <a href="/Adriancv.pdf" download={'adriancv.pdf'} aria-label="descargar resume de Adrian Rivarola">
               <ResumeIcon className="h-full col-start-2" fill="#fff" />
             </a>
           </div>

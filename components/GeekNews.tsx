@@ -20,17 +20,20 @@ const GeekNewsContent = async () => {
   // };
   return (
     <>
-      <Image
-        src={response?.articles[0].image}
-        alt={response?.articles[0].title}
-        fill
-        sizes="50vw"
-        className="z-[-1] h-full w-full brightness-75"
-      />
+      
+        <Image
+          src={response?.articles[0].image}
+          alt={response?.articles[0].title}
+          fill
+          sizes="50vw"
+          className="z-[-1] h-full w-full brightness-75"
+        />
+     
       <Link
         href={response?.articles[0].source.url}
         className="hoverStyle p-5"
         target="_blank"
+        aria-label={`Leer más sobre: ${response?.articles[0].title || "Artículo destacado"}`}
       >
         <LinkIcon className="link-icon" fill="#fff" />
         <h2 className="text-lg md:text-3xl">{response?.articles[0].title}</h2>

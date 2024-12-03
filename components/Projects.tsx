@@ -15,6 +15,7 @@ export default function Projects() {
             className="h-24 w-24 hoverStyle md:h-32 md:w-32"
             scroll={false}
             target="blank"
+            aria-label="Ir al proyecto NEXTFlix"
             >
                 <NextflixIcon className="h-full w-full" fill="#fff" />
             </Link>
@@ -26,6 +27,7 @@ export default function Projects() {
             className="h-24 w-24 hoverStyle md:h-32 md:w-32"
             scroll={false}
             target="blank"
+            aria-label="Ir al proyecto E-Commerce"
             >
                 <CartIcon className="h-full w-full" fill="#fff" textFill="none"/>
             </Link>
@@ -37,6 +39,7 @@ export default function Projects() {
             className="h-24 w-24 hoverStyle md:h-32 md:w-32"
             scroll={false}
             target="blank"
+            aria-label="Ir al proyecto Chat-app"
             >
                 <ChatIcon className="h-full w-full" fill="none" textFill="#fff" />
             </Link>
