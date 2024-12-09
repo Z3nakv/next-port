@@ -339,10 +339,30 @@ export function MailIcon(props:NextjsIconProps) {
   )
 }
 
-export function SwitchIcons(props:NextjsIconProps) {
+type SwitchIconsProps = {
+  className: string;
+    fill: string;
+    textFill?: string;
+    isChecked: boolean;
+    onClick: ()=>void
+}
+export function SwitchIcons(props : SwitchIconsProps)  {
   return (
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill={props.textFill}
-    className={`${props.className || ""}`}><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path stroke={props.fill} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 6H9a6 6 0 1 0 0 12h6a6 6 0 0 0 0-12Z"></path> <circle cx="15" cy="12" r="3" fill={props.fill} stroke={props.fill} strokeWidth="2"></circle> </g></svg>
+    <svg 
+    viewBox="0 0 24 24" 
+    xmlns="http://www.w3.org/2000/svg" 
+    fill={props.textFill}
+    className={`${props.className || ""} transition duration-300`}
+    onClick={props.onClick}
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+      <g id="SVGRepo_iconCarrier"> 
+        <path stroke={props.fill} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 6H9a6 6 0 1 0 0 12h6a6 6 0 0 0 0-12Z"></path> <circle cx={props.isChecked ? '15' : '9'} cy="12" r="3" fill={props.fill} stroke={props.fill} strokeWidth="2" style={{
+            transition: "cx 0.1s ease-in-out",
+          }}></circle> 
+      </g>
+    </svg>
   )
 }
 

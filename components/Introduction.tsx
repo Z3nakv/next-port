@@ -1,23 +1,29 @@
+
 import Head from "next/head";
 import Image from "next/image";
 
 export default function Introduction() {
+    
     return (
         <>
-            
+
             <Head>
                 <link rel="preload" href="/mechabg.mp4" as="video" />
                 <link rel="preload" href="/mechaPixel.gif" as="image" />
             </Head>
             <div
-            className="col-span-8 grid grid-cols-4 relative componentStyle overflow-hidden p-12 sm:p-14 md:text-nowrap shadow-boxShadow
+                className="col-span-8 grid grid-cols-4 relative componentStyle overflow-hidden p-12 sm:p-14 md:text-nowrap shadow-boxShadow
             md:col-span-5">
-                <video
-                    src="/mechabg.mp4"
-                    autoPlay loop muted
-                    className="absolute inset-0 object-fit z-[-1] w-full h-full object-fill brightness-50"
-                    rel="preload"
-                />
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+                className="absolute inset-0 object-fill z-[-1] w-full h-full brightness-50"
+            >
+                <source src="/mechabg.mp4" type="video/mp4" />
+            </video>
                 <div className="col-span-1 md:row-start-1 row-end-3 mb-5 relative h-full grid place-content-center">
                     <Image
                         src='/mechaPixel.gif'
